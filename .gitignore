@@ -3,3 +3,7 @@ build/
 target/
 /gradle
 /.settings
+/axa-gulf-master-data-api/*.classpath
+/axa-gulf-master-data-api/*
+/axa-gulf-master-data-service/*.classpath
+/axa-gulf-master-data-service/*
