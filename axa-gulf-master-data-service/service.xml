@@ -21,7 +21,7 @@
 		<column name="modifiedDate" type="Date" />
 
 		<!-- Other fields -->
-		<column name="automobile_maker_model_version_cat_code" type="String" />
+		<column name="automobile_cat_code" type="String" />
 		<column name="automobile_maker_code" type="String" />
 		<column name="automobile_maker_name" type="String" />
 		<column name="automobile_model_code" type="String" />
@@ -55,48 +55,48 @@
 		<column name="upper_threshold" type="String" />
 		<column name="depreciation_flat" type="String" />
 		<column name="value" type="String" />
-		<column name="1st_yr_dep_per" type="String" />
-		<column name="2nd_yr_dep_per" type="String" />
-		<column name="3rd_yr_dep_per" type="String" />
-		<column name="4th_yr_dep_per" type="String" />
-		<column name="5th_yr_dep_per" type="String" />
-		<column name="6th_yr_dep_per" type="String" />
-		<column name="7th_yr_dep_per" type="String" />
-		<column name="8th_yr_dep_per" type="String" />
-		<column name="9th_yr_dep_per" type="String" />
-		<column name="10th_yr_dep_per" type="String" />
-		<column name="11th_yr_dep_per" type="String" />
-		<column name="12th_yr_dep_per" type="String" />
-		<column name="13th_yr_dep_per" type="String" />
-		<column name="14+_yr_dep_per" type="String" />
-		<column name="1st_yr_dep_val" type="String" />
-		<column name="2nd_yr_dep_val" type="String" />
-		<column name="3rd_yr_dep_val" type="String" />
-		<column name="4th_yr_dep_val" type="String" />
-		<column name="5th_yr_dep_val" type="String" />
-		<column name="6th_yr_dep_val" type="String" />
-		<column name="7th_yr_dep_val" type="String" />
-		<column name="8th_yr_dep_val" type="String" />
-		<column name="9th_yr_dep_val" type="String" />
-		<column name="10th_yr_dep_val" type="String" />
-		<column name="11th_yr_dep_val" type="String" />
-		<column name="12th_yr_dep_val" type="String" />
-		<column name="13th_yr_dep_val" type="String" />
-		<column name="14+_yr_dep_val" type="String" />
-		<column name="1st_yr_flat_val" type="String" />
-		<column name="2nd_yr_flat_val" type="String" />
-		<column name="3rd_yr_flat_val" type="String" />
-		<column name="4th_yr_flat_val" type="String" />
-		<column name="5th_yr_flat_val" type="String" />
-		<column name="6th_yr_flat_val" type="String" />
-		<column name="7th_yr_flat_val" type="String" />
-		<column name="8th_yr_flat_val" type="String" />
-		<column name="9th_yr_flat_val" type="String" />
-		<column name="10th_yr_flat_val" type="String" />
-		<column name="11th_yr_flat_val" type="String" />
-		<column name="12th_yr_flat_val" type="String" />
-		<column name="13th_yr_flat_val" type="String" />
-		<column name="14+_yr_flat_val" type="String" />
+		<column name="_1st_yr_dep_per" type="String" />
+		<column name="_2nd_yr_dep_per" type="String" />
+		<column name="_3rd_yr_dep_per" type="String" />
+		<column name="_4th_yr_dep_per" type="String" />
+		<column name="_5th_yr_dep_per" type="String" />
+		<column name="_6th_yr_dep_per" type="String" />
+		<column name="_7th_yr_dep_per" type="String" />
+		<column name="_8th_yr_dep_per" type="String" />
+		<column name="_9th_yr_dep_per" type="String" />
+		<column name="_10th_yr_dep_per" type="String" />
+		<column name="_11th_yr_dep_per" type="String" />
+		<column name="_12th_yr_dep_per" type="String" />
+		<column name="_13th_yr_dep_per" type="String" />
+		<column name="_14th_yr_dep_per" type="String" />
+		<column name="_1st_yr_dep_val" type="String" />
+		<column name="_2nd_yr_dep_val" type="String" />
+		<column name="_3rd_yr_dep_val" type="String" />
+		<column name="_4th_yr_dep_val" type="String" />
+		<column name="_5th_yr_dep_val" type="String" />
+		<column name="_6th_yr_dep_val" type="String" />
+		<column name="_7th_yr_dep_val" type="String" />
+		<column name="_8th_yr_dep_val" type="String" />
+		<column name="_9th_yr_dep_val" type="String" />
+		<column name="_10th_yr_dep_val" type="String" />
+		<column name="_11th_yr_dep_val" type="String" />
+		<column name="_12th_yr_dep_val" type="String" />
+		<column name="_13th_yr_dep_val" type="String" />
+		<column name="_14th_yr_dep_val" type="String" />
+		<column name="_1st_yr_flat_val" type="String" />
+		<column name="_2nd_yr_flat_val" type="String" />
+		<column name="_3rd_yr_flat_val" type="String" />
+		<column name="_4th_yr_flat_val" type="String" />
+		<column name="_5th_yr_flat_val" type="String" />
+		<column name="_6th_yr_flat_val" type="String" />
+		<column name="_7th_yr_flat_val" type="String" />
+		<column name="_8th_yr_flat_val" type="String" />
+		<column name="_9th_yr_flat_val" type="String" />
+		<column name="_10th_yr_flat_val" type="String" />
+		<column name="_11th_yr_flat_val" type="String" />
+		<column name="_12th_yr_flat_val" type="String" />
+		<column name="_13th_yr_flat_val" type="String" />
+		<column name="_14th_yr_flat_val" type="String" />
 		<column name="default_flag" type="String" />
 		<column name="country_name" type="String" />
 		<column name="enddate" type="String" />
@@ -106,24 +106,24 @@
 
 		<!-- Order -->
 
-		<order by="asc">
-			<order-column name="automobile_maker_name" />
-		</order>
+<!-- 		<order by="asc"> -->
+<!-- 			<order-column name="automobile_maker_name" /> -->
+<!-- 		</order> -->
 
 		<!-- Finder methods -->
 
-		<finder name="Automobile_maker_code" return-type="Collection">
-			<finder-column name="automobile_maker_code" />
-		</finder>
+<!-- 		<finder name="Automobile_maker_code" return-type="Collection"> -->
+<!-- 			<finder-column name="automobile_maker_code" /> -->
+<!-- 		</finder> -->
 	
-		<finder name="Automobile_maker_name" return-type="Collection">
-			<finder-column name="automobile_maker_name" />
-		</finder>
+<!-- 		<finder name="Automobile_maker_name" return-type="Collection"> -->
+<!-- 			<finder-column name="automobile_maker_name" /> -->
+<!-- 		</finder> -->
 		
-		<finder name="Automobile_maker_code_automobile_model_code" return-type="Collection">
-			<finder-column name="automobile_maker_code" />
-			<finder-column name="automobile_model_code" />
-		</finder>
+<!-- 		<finder name="Automobile_maker_code_automobile_model_code" return-type="Collection"> -->
+<!-- 			<finder-column name="automobile_maker_code" /> -->
+<!-- 			<finder-column name="automobile_model_code" /> -->
+<!-- 		</finder> -->
 
 	</entity>
 </service-builder>

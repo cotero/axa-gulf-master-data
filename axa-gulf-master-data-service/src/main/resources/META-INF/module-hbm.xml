@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping auto-import="false" default-lazy="false">
+	<import class="com.axa.glf.masterdata.model.Vehicle_Catalogue" />
+	<class name="com.axa.glf.masterdata.model.impl.Vehicle_CatalogueImpl" table="glf_Vehicle_Catalogue">
+		<id name="vehicleId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property column="uuid_" name="uuid" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="automobile_cat_code" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="automobile_maker_code" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="automobile_maker_name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="automobile_model_code" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="automobile_model_name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="automobile_version_code" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="automobile_version_name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="automobile_sub_type_name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="automobile_usage_type_name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="automobile_body_type_name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="automobile_body_type_desc" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="automobile_fuel_type_name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="automobile_type_name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="power" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="width" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="surface" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="weight" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="vehicle_value" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="engine_cc" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="rate_category" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="doors" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="allowed" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="no_of_cylinder" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="restricted" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="no_of_seats" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="engine_type" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="transmission_type" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="no_of_gears" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="final_drive" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="no_of_axels" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="lower_threshold" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="upper_threshold" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="depreciation_flat" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="value" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_1st_yr_dep_per" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_2nd_yr_dep_per" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_3rd_yr_dep_per" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_4th_yr_dep_per" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_5th_yr_dep_per" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_6th_yr_dep_per" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_7th_yr_dep_per" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_8th_yr_dep_per" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_9th_yr_dep_per" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_10th_yr_dep_per" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_11th_yr_dep_per" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_12th_yr_dep_per" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_13th_yr_dep_per" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_14th_yr_dep_per" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_1st_yr_dep_val" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_2nd_yr_dep_val" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_3rd_yr_dep_val" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_4th_yr_dep_val" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_5th_yr_dep_val" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_6th_yr_dep_val" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_7th_yr_dep_val" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_8th_yr_dep_val" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_9th_yr_dep_val" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_10th_yr_dep_val" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_11th_yr_dep_val" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_12th_yr_dep_val" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_13th_yr_dep_val" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_14th_yr_dep_val" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_1st_yr_flat_val" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_2nd_yr_flat_val" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_3rd_yr_flat_val" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_4th_yr_flat_val" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_5th_yr_flat_val" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_6th_yr_flat_val" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_7th_yr_flat_val" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_8th_yr_flat_val" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_9th_yr_flat_val" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_10th_yr_flat_val" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_11th_yr_flat_val" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_12th_yr_flat_val" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_13th_yr_flat_val" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="_14th_yr_flat_val" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="default_flag" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="country_name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="enddate" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="order_sequence" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<beans
+	default-destroy-method="destroy"
+	default-init-method="afterPropertiesSet"
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+>
+	<bean class="com.axa.glf.masterdata.service.impl.Vehicle_CatalogueLocalServiceImpl" id="com.axa.glf.masterdata.service.Vehicle_CatalogueLocalService" />
+	<bean class="com.axa.glf.masterdata.service.impl.Vehicle_CatalogueServiceImpl" id="com.axa.glf.masterdata.service.Vehicle_CatalogueService" />
+	<bean class="com.axa.glf.masterdata.service.persistence.impl.Vehicle_CataloguePersistenceImpl" id="com.axa.glf.masterdata.service.persistence.Vehicle_CataloguePersistence" parent="basePersistence" />
+</beans>
