@@ -1,0 +1,9 @@
+Bundle-Name: axa-gulf-master-data-api
+Bundle-SymbolicName: com.axa.glf.masterdata.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.axa.glf.masterdata.exception,\
+	com.axa.glf.masterdata.model,\
+	com.axa.glf.masterdata.service,\
+	com.axa.glf.masterdata.service.persistence
+-includeresource: META-INF/service.xml=../axa-gulf-master-data-service/service.xml

@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.0.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_0_0.dtd">
+
+<service-builder package-path="com.axa.glf.masterdata">
+	<namespace>glf</namespace>
+	<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
+	<entity local-service="true" name="Vehicle_Catalogue" remote-service="true" uuid="true">
+
+		<!-- PK fields -->
+
+		<column name="vehicleId" primary="true" type="long" />
+
+		<!-- Group instance -->
+		<column name="groupId" type="long" />
+
+		<!-- Audit fields -->
+		<column name="companyId" type="long" />
+		<column name="userId" type="long" />
+		<column name="userName" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Other fields -->
+		<column name="automobile_maker_model_version_cat_code" type="String" />
+		<column name="automobile_maker_code" type="String" />
+		<column name="automobile_maker_name" type="String" />
+		<column name="automobile_model_code" type="String" />
+		<column name="automobile_model_name" type="String" />
+		<column name="automobile_version_code" type="String" />
+		<column name="automobile_version_name" type="String" />
+		<column name="automobile_sub_type_name" type="String" />
+		<column name="automobile_usage_type_name" type="String" />
+		<column name="automobile_body_type_name" type="String" />
+		<column name="automobile_body_type_desc" type="String" />
+		<column name="automobile_fuel_type_name" type="String" />
+		<column name="automobile_type_name" type="String" />
+		<column name="power" type="String" />
+		<column name="width" type="String" />
+		<column name="surface" type="String" />
+		<column name="weight" type="String" />
+		<column name="vehicle_value" type="String" />
+		<column name="engine_cc" type="String" />
+		<column name="rate_category" type="String" />
+		<column name="doors" type="String" />
+		<column name="allowed" type="String" />
+		<column name="no_of_cylinder" type="String" />
+		<column name="restricted" type="String" />
+		<column name="no_of_seats" type="String" />
+		<column name="engine_type" type="String" />
+		<column name="transmission_type" type="String" />
+		<column name="no_of_gears" type="String" />
+		<column name="final_drive" type="String" />
+		<column name="no_of_axels" type="String" />
+		<column name="lower_threshold" type="String" />
+		<column name="upper_threshold" type="String" />
+		<column name="depreciation_flat" type="String" />
+		<column name="value" type="String" />
+		<column name="1st_yr_dep_per" type="String" />
+		<column name="2nd_yr_dep_per" type="String" />
+		<column name="3rd_yr_dep_per" type="String" />
+		<column name="4th_yr_dep_per" type="String" />
+		<column name="5th_yr_dep_per" type="String" />
+		<column name="6th_yr_dep_per" type="String" />
+		<column name="7th_yr_dep_per" type="String" />
+		<column name="8th_yr_dep_per" type="String" />
+		<column name="9th_yr_dep_per" type="String" />
+		<column name="10th_yr_dep_per" type="String" />
+		<column name="11th_yr_dep_per" type="String" />
+		<column name="12th_yr_dep_per" type="String" />
+		<column name="13th_yr_dep_per" type="String" />
+		<column name="14+_yr_dep_per" type="String" />
+		<column name="1st_yr_dep_val" type="String" />
+		<column name="2nd_yr_dep_val" type="String" />
+		<column name="3rd_yr_dep_val" type="String" />
+		<column name="4th_yr_dep_val" type="String" />
+		<column name="5th_yr_dep_val" type="String" />
+		<column name="6th_yr_dep_val" type="String" />
+		<column name="7th_yr_dep_val" type="String" />
+		<column name="8th_yr_dep_val" type="String" />
+		<column name="9th_yr_dep_val" type="String" />
+		<column name="10th_yr_dep_val" type="String" />
+		<column name="11th_yr_dep_val" type="String" />
+		<column name="12th_yr_dep_val" type="String" />
+		<column name="13th_yr_dep_val" type="String" />
+		<column name="14+_yr_dep_val" type="String" />
+		<column name="1st_yr_flat_val" type="String" />
+		<column name="2nd_yr_flat_val" type="String" />
+		<column name="3rd_yr_flat_val" type="String" />
+		<column name="4th_yr_flat_val" type="String" />
+		<column name="5th_yr_flat_val" type="String" />
+		<column name="6th_yr_flat_val" type="String" />
+		<column name="7th_yr_flat_val" type="String" />
+		<column name="8th_yr_flat_val" type="String" />
+		<column name="9th_yr_flat_val" type="String" />
+		<column name="10th_yr_flat_val" type="String" />
+		<column name="11th_yr_flat_val" type="String" />
+		<column name="12th_yr_flat_val" type="String" />
+		<column name="13th_yr_flat_val" type="String" />
+		<column name="14+_yr_flat_val" type="String" />
+		<column name="default_flag" type="String" />
+		<column name="country_name" type="String" />
+		<column name="enddate" type="String" />
+		<column name="order_sequence" type="String" />
+		
+
+
+		<!-- Order -->
+
+		<order by="asc">
+			<order-column name="automobile_maker_name" />
+		</order>
+
+		<!-- Finder methods -->
+
+		<finder name="Automobile_maker_code" return-type="Collection">
+			<finder-column name="automobile_maker_code" />
+		</finder>
+	
+		<finder name="Automobile_maker_name" return-type="Collection">
+			<finder-column name="automobile_maker_name" />
+		</finder>
+		
+		<finder name="Automobile_maker_code_automobile_model_code" return-type="Collection">
+			<finder-column name="automobile_maker_code" />
+			<finder-column name="automobile_model_code" />
+		</finder>
+
+	</entity>
+</service-builder>
